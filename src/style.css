@@ -1,1 +1,52 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Playfair Display", serif;
+}
+
+.letter {
+  border-radius: 25px;
+  width: 27rem;
+  height: 37rem;
+  background-color: white;
+}
+
+.top,
+.bot {
+  font-size: 5rem;
+  width: 24rem;
+  margin: auto;
+}
+
+.numberRandom {
+  font-size: 7rem;
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 24rem;
+}
+.numberRandom2 {
+  font-size: 7rem;
+}
+.rotate {
+  transform: rotate(180deg);
+}
+
+.button {
+  border-radius: 50px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+
+.button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}

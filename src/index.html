@@ -11,18 +11,57 @@
       crossorigin="anonymous"
     />
     <link rel="shortcut icon" href="./4geeks.ico" />
+
+    <!-- GOOGLE FONTS -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body>
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+  <body class="bg-success">
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-6" style="height: 35rem;">
+          <div class="letter">
+            <div class="row">
+              <div class="col" style="height: 10rem;">
+                <h2 class="numberRandom fs-1 p-2" id="numberTop"></h2>
+                <p class="top" id="symbolsH"></p>
+              </div>
+            </div>
+            <div class="row">
+              <div
+                class="col d-flex justify-content-center align-items-center"
+                style="height: 15rem;"
+              >
+                <h2 class="numberRandom2" id="number"></h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col" style="height: 10rem;">
+                <p class="bot rotate" id="symbolsF"></p>
+                <h2 class="numberRandom fs-1 rotate p-2" id="numberBot"></h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 d-flex align-items-center">
+          <div class="content d-flex justify-content-center">
+            <button
+              type="button"
+              class="btn btn-primary button"
+              id="newLetter"
+            ></button>
+            <button
+              type="button"
+              class="btn btn-info button"
+              id="dimensions"
+            ></button>
+          </div>
+        </div>
       </div>
     </div>
   </body>
